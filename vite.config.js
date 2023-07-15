@@ -8,7 +8,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: 'src/index.html',
-        'sign-in': 'src/sign-in.html'
+        'sign-up': 'src/sign-up.html'
       },
     }
   },

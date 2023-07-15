@@ -10,7 +10,7 @@
   src: url(fonts/Akzidenz-Grotesk-Pro/AkzidenzGroteskPro-MdEx.woff2) format("woff2");
 }
   @font-face {
-    font-family: Manrope;
+    font-family:Manrope;
     font-weight: 600;
     src: url(fonts/Manrope/Manrope-SemiBold.ttf);
   }
@@ -21,10 +21,8 @@
   }
 
   :root{
-    --font-size-sm: 14px;
-    --font-size-base: 15px;
-    --font-size-lg: 19px;
-    --font-size-4xl: 40px;
+    --font-akzidenz:Akzidenz-Grotesk Pro;
+    --font-manrope:Manrope;
 
     --radial-gradient-type-1: radial-gradient(50% 50.00% at 50% 50.00%, rgba(234, 16, 16, 1), rgba(234, 16, 16, 0));
     --radial-gradient-type-2: radial-gradient(50% 50.00% at 50% 50.00%, rgba(16, 234, 181, 1), rgba(16, 234, 181, 0));
