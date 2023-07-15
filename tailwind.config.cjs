@@ -2,12 +2,6 @@
 module.exports = {
   content: ["./src//*.{html,js}"],
   theme: {
-    fontSize: {
-      sm: 'var(--font-size-sm)',
-      base: 'var(--font-size-base)',
-      lg: 'var(--font-size-lg)',
-      '4xl': 'var(--font-size-4xl)',
-    },
     screens: {
       'bp375': '375px',
       'bp576': '576px',
@@ -19,8 +13,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        'primary': 'var(--font-primary)',
-        'secondary': 'var(--font-secondary)',
+        'akzidenz': 'var(--font-akzidenz)',
+        'manrope': 'var(--font-manrope)',
       },
       colors: {
         'accent': 'rgba(var(--accent), <alpha-value>)',
@@ -28,9 +22,9 @@ module.exports = {
         'background-primary': 'rgba(var(--background-primary), <alpha-value>)',
         'background-secondary': 'rgba(var(--background-secondary), <alpha-value>)',
 
-        'text-primary': 'rgba(var(--text-primary), <alpha-value>)',
-        'text-secondary': 'rgba(var(--text-secondary), <alpha-value>)',
-        'text-highlighted': 'rgba(var(--text-highlighted), <alpha-value>)',
+        'primary': 'rgba(var(--text-primary), <alpha-value>)',
+        'secondary': 'rgba(var(--text-secondary), <alpha-value>)',
+        'highlighted': 'rgba(var(--text-highlighted), <alpha-value>)',
 
         'input-icon-active': 'rgba(var(--input-icon-active), <alpha-value>)',
         'input-icon-disabled': 'rgba(var(--input-icon-disabled), <alpha-value>)',
