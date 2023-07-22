@@ -30,6 +30,7 @@ module.exports = {
         'input-icon-disabled': 'rgba(var(--input-icon-disabled), <alpha-value>)',
         'input-border-active': 'rgba(var(--input-border-active), <alpha-value>)',
         'input-border-disabled': 'rgba(var(--input-border-disabled), <alpha-value>)',
+        'input-text-form': 'rgba(var(--input-text-form), <alpha-value>)',
       },
       backgroundImage: {
         'gradient-radial-type1': 'var(--radial-gradient-type-1)',

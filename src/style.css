@@ -47,6 +47,8 @@
     --input-border-active: 245, 245, 245;
     --input-border-disabled: 82, 100, 118;
 
+    --input-text-form: 178, 220, 200;
+
   }
 
   html[data-theme='light'] {
@@ -61,6 +63,7 @@
     --input-icon-disabled: 148, 160, 172;
     --input-border-active: 199, 205, 213;
     --input-border-disabled: 232, 238, 243;
+    --input-text-form: 178, 220, 200;
 
   }
 }
