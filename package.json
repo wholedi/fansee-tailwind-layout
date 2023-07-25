@@ -2,7 +2,11 @@
   "name": "fansee-tailwind-layout",
   "description": "NoJS Vite + Tailwind CSS Starter",
   "version": "0.0.1",
-  "keywords": ["tailwindcss", "vite", "vite-tailwind"],
+  "keywords": [
+    "tailwindcss",
+    "vite",
+    "vite-tailwind"
+  ],
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -12,6 +16,8 @@
   "devDependencies": {
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.25",
+    "prettier": "^3.0.0",
+    "prettier-plugin-tailwindcss": "^0.4.1",
     "tailwindcss": "^3.3.3",
     "vite": "^4.4.3"
   }
