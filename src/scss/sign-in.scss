@@ -1,0 +1,63 @@
+@function getColor($base, $opacity: 1) {
+  @return rgba($base, $opacity);
+}
+
+//$base-color: #c6538c;
+//
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+//
+//.body {
+//  @include flex-center;
+//  background: getColor(var(--background-primary));
+//
+//  .container {
+//    background: $base-color;
+//
+//    &:hover {
+//      background: blue;
+//    }
+//  }
+//}
+//
+//.container {
+//  background: #000;
+//}
+
+.body {
+  background: getColor(var(--background-primary));
+}
+
+.main-page {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.main-page__background {
+  position: relative;
+  @include flex-center;
+  height: 100%;
+  width: 700px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-page__logo{
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  height: auto;
+}
+
+.main-page__text-block{
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
