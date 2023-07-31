@@ -10,6 +10,7 @@ export default defineConfig({
         main: "src/index.html",
         "sign-up": "src/sign-up.html",
         "sign-in": "src/sign-in.html",
+        "sign-in-scss": "src/sign-in-scss.html",
       },
     },
   },
