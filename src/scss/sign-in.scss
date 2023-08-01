@@ -42,17 +42,18 @@
 .main-page__background {
   position: relative;
   @include flex-center;
-  height: 100%;
-  width: 700px;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .main-page__logo{
   position: absolute;
-  top: 50%;
-  right: 50%;
   height: auto;
+}
+
+.main-page__photo{
+  height: 100%;
+  width:700px;
 }
 
 .main-page__text-block{
