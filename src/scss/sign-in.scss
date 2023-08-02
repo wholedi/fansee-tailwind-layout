@@ -41,13 +41,15 @@
 
 .main-page__background {
   position: relative;
-  @include flex-center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .main-page__logo{
   position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
   height: auto;
 }
 
@@ -61,4 +63,42 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+}
+
+.main-page__text-block{
+  margin:auto;
+  height: fit-content;
+  padding:0 95px;
+}
+
+.text-block__header{
+  font-family: "Akzidenz-Grotesk Pro",sans-serif;
+  font-size: 40px;
+  color:getColor(var(--text-primary));
+}
+
+.text-block__text{
+  margin-top: 6px;
+  font-family: "Manrope",sans-serif;
+  font-size: 20px;
+  color:getColor(var(--text-secondary));
+}
+
+.form{
+  margin-top: 32px;
+  width: 100%;
+}
+
+.form__label{
+  display:block;
+  position: relative;
+  margin-top: 16px;
+}
+
+.form__input{
+  height: 60px;
+  width: 100%;
+  border-radius: 16px;
+  border: solid 2px getColor(var(--input-icon-disabled));
+  background: getColor(var(--background-primary));
 }
