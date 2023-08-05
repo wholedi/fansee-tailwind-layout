@@ -58,26 +58,23 @@
   width: 700px;
 }
 
-.main-page__text-block {
+.block__sign-in {
   position: relative;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-}
-
-.main-page__text-block {
   margin: auto;
   height: fit-content;
   padding: 0 95px;
 }
 
-.text-block__header {
+.sign-in {
   font-family: "Akzidenz-Grotesk Pro", sans-serif;
   font-size: 40px;
   color: getColor(var(--text-primary));
 }
 
-.text-block__text {
+.welcome-message {
   margin-top: 6px;
   font-family: "Manrope", sans-serif;
   font-size: 20px;
@@ -172,7 +169,7 @@
   border-radius: 16px;
 }
 
-.footer{
+.account__section{
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -181,19 +178,19 @@
   padding: 0 16px 20px 16px;
 }
 
-.footer__text{
+.account__message{
   font-family: "Manrope", sans-serif;
   font-size: 14px;
   font-weight: 600;
   color:getColor(var(--text-secondary));
 }
 
-.footer__link{
+.get-started__link{
   color:#fff;
   border-bottom: solid 2px getColor(var(--text-highlighted));
 }
 
-.subject{
+.theme-switcher{
   position: absolute;
   right: 10px;
   display: inline-flex;
@@ -201,7 +198,7 @@
   align-items: center;
 }
 
-.subject__input{
+.theme-switcher__input{
   position: absolute;
   width: 1px;
   height: 1px;
@@ -213,11 +210,21 @@
   border-width: 0;
 }
 
-.subject__input:checked ~ .subject__block {
-  background: #fff;
+.theme-switcher__input:checked ~ .theme__block {
+  .theme-default {
+    opacity: 0.4;
+  }
+
+  .theme-light {
+    opacity: 1;
+  }
+
+  &:after{
+    left: 33px;
+  }
 }
 
-.subject__block {
+.theme__block {
   position: relative;
   display: block;
   height: 28px;
@@ -231,6 +238,7 @@
     top:2px;
     height: 24px;
     width: 24px;
+    border-radius: 9999px;
     border:solid 1px getColor(var(--text-highlighted));
     background-color: transparent;
     transition-property: all;
@@ -240,20 +248,22 @@
   }
 }
 
-.peer:checked ~ .peer-checked\::after {
-  transform: translateX(30px);
-  border:getColor(var(--text-highlighted));
-}
 
-.block__moon{
+
+.theme-default{
   position: absolute;
   left: 9px;
   top:8px;
+  color: getColor(var(--text-primary));
+  transition: opacity .3s ease-in-out;
 }
 
-.block__sun{
+.theme-light{
   position: absolute;
   right: 6px;
   top:5px;
+  color: getColor(var(--text-primary));
+  transition: opacity .3s ease-in-out;
+  opacity: 0.4;
 }
 
