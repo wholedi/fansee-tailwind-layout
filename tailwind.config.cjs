@@ -17,21 +17,22 @@ module.exports = {
         'manrope': 'var(--font-manrope)',
       },
       colors: {
-        'accent': 'rgba(var(--accent), <alpha-value>)',
+        "accent": "rgba(var(--accent), <alpha-value>)",
 
-        'background-primary': 'rgba(var(--background-primary), <alpha-value>)',
-        'background-secondary': 'rgba(var(--background-secondary), <alpha-value>)',
+        "background-button": "rgba(var(--background-button), <alpha-value>)",
+        "background-primary": "rgba(var(--background-primary), <alpha-value>)",
+        "background-secondary": "rgba(var(--background-secondary), <alpha-value>)",
 
-        'primary': 'rgba(var(--text-primary), <alpha-value>)',
-        'secondary': 'rgba(var(--text-secondary), <alpha-value>)',
-        'highlighted': 'rgba(var(--text-highlighted), <alpha-value>)',
+        "highlighted": "rgba(var(--text-highlighted), <alpha-value>)",
+        "input-border-active": "rgba(var(--input-border-active), <alpha-value>)",
+        "input-border-disabled": "rgba(var(--input-border-disabled), <alpha-value>)",
 
-        'input-icon-active': 'rgba(var(--input-icon-active), <alpha-value>)',
-        'input-icon-disabled': 'rgba(var(--input-icon-disabled), <alpha-value>)',
-        'input-border-active': 'rgba(var(--input-border-active), <alpha-value>)',
-        'input-border-disabled': 'rgba(var(--input-border-disabled), <alpha-value>)',
-        'input-text-form': 'rgba(var(--input-text-form), <alpha-value>)',
-        'input-text-error': 'rgba(var(--input-text-error), <alpha-value>)',
+        "input-icon-active": "rgba(var(--input-icon-active), <alpha-value>)",
+        "input-icon-disabled": "rgba(var(--input-icon-disabled), <alpha-value>)",
+        "input-text-error": "rgba(var(--input-text-error), <alpha-value>)",
+        "input-text-form": "rgba(var(--input-text-form), <alpha-value>)",
+        "primary": "rgba(var(--text-primary), <alpha-value>)",
+        "secondary": "rgba(var(--text-secondary), <alpha-value>)"
       },
       backgroundImage: {
         'gradient-radial-type1': 'var(--radial-gradient-type-1)',
