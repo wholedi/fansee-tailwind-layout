@@ -8,18 +8,14 @@
         <title>Sign In</title>
     </head>
     <body class="body">
-        <div class="main-page">
-            <!--auth-page-->
-            <div class="main-page__background">
-                <!--auth-page__image-block image-block-->
+        <div class="auth-page">
+            <div class="auth-page__image-block image-block">
                 <img
-                    class="main-page__photo"
+                    class="image-block__background"
                     src="images/sign-in/sign-in.png"
                     alt="photo"
                 />
-                <!--image-block__background-->
-                <div class="main-page__logo">
-                    <!--image-block__logo-->
+                <div class="image-block__logo">
                     <svg
                         width="240"
                         height="325"
@@ -180,32 +176,25 @@
                     </svg>
                 </div>
             </div>
-            <div class="block__sign-in">
-                <!--auth-page__content-->
-                <div>
-                    <h1 class="sign-in">Sign In</h1>
-                    <!--content__title-->
-                    <h2 class="welcome-message">
+            <div class="auth-page__content content">
+                <div class="content__form_wrapper">
+                    <h1 class="content__title">Sign In</h1>
+                    <h2 class="content__subtitle">
                         Welcome back! We are glad to see you!
                     </h2>
-                    <!--content__subtitle-->
-                    <form class="form" action="" method="post">
-                        <!--content__form form-->
-                        <div class="form__label">
-                            <!--form__item input-->
+                    <form class="content__form form" action="" method="post">
+                        <div class="form__item input">
                             <input
-                                class="form__input"
-                                id="Password"
+                                class="input__field"
+                                id="Email"
                                 type="text"
                                 name="name"
                                 placeholder=" "
                             />
-                            <!--input__field-->
-                            <label class="form__span" for="Password">
+                            <label class="input__label" for="Email">
                                 Email
                             </label>
-                            <!--input__label-->
-                            <div class="form__svg">
+                            <div class="input__icon">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="22"
@@ -219,19 +208,20 @@
                                     />
                                 </svg>
                             </div>
-                            <!--input__icon-->
                         </div>
 
-                        <label class="form__label" for="Confirm password">
+                        <div class="form__item input">
                             <input
-                                class="form__input"
+                                class="input__field"
                                 id="Confirm password"
                                 type="text"
                                 name="name"
                                 placeholder=" "
                             />
-                            <span class="form__span">Password</span>
-                            <div class="form__svg">
+                            <label class="input__label" for="Confirm password"
+                                >Password</label
+                            >
+                            <div class="input__icon">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="22"
@@ -245,8 +235,7 @@
                                     />
                                 </svg>
                             </div>
-                            <button class="form__icon">
-                                <!--input__button-->
+                            <button class="input__button">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="20"
@@ -264,30 +253,30 @@
                                     />
                                 </svg>
                             </button>
-                        </label>
-                        <button class="button__sign-in" type="submit">
-                            <!--form__item button button--outlined-->
+                        </div>
+                        <button
+                            class="form__item button button--outlined"
+                            type="submit"
+                        >
                             Sign In
                         </button>
                     </form>
                 </div>
-                <div class="account__section">
-                    <!--auth-page__footer footer-->
+                <div class="auth-page__footer footer">
                     <p class="account__message">
-                        <!--footer__page-switcher-->
                         Don’t have an account?
-                        <a class="get-started__link" href="#">Get started</a>
-                        <!--footer__page-switcher-link-->
+                        <a class="footer__page-switcher-link" href="#"
+                            >Get started</a
+                        >
                     </p>
-                    <label class="theme-switcher">
-                        <!--footer__theme-switcher theme-switcher-->
+                    <label class="footer__theme-switcher theme-switcher">
                         <input
                             class="theme-switcher__input"
                             type="checkbox"
                             value=""
                             checked
                         />
-                        <div class="theme__block">
+                        <div class="theme-switcher__default-theme-icon">
                             <svg
                                 class="theme-default"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -296,7 +285,6 @@
                                 viewBox="0 0 12 12"
                                 fill="none"
                             >
-                                <!--theme-switcher__default-theme-icon-->
                                 <g clip-path="url(#clip0_41_896)">
                                     <path
                                         d="M3.77625 1.86812C3.6989 2.32333 3.67558 2.78569 3.70676 3.24608C3.80745 4.67945 4.43743 6.02891 5.48032 7.04517C6.52321 8.06143 7.90854 8.67583 9.38041 8.77486C9.51747 8.78332 9.65645 8.78802 9.79352 8.78802C9.86977 8.78802 9.94604 8.78802 10.0223 8.78802C9.57258 9.30967 9.01139 9.72946 8.37788 10.0181C7.74437 10.3068 7.05382 10.4573 6.3544 10.4592H6.21927C5.19436 10.4332 4.20515 10.0872 3.39735 9.47243C2.58954 8.85763 2.00585 8.00645 1.73224 7.04427C1.45863 6.08208 1.50956 5.05977 1.87755 4.1279C2.24554 3.19603 2.91112 2.40388 3.77625 1.86812ZM4.33513 0.596371C4.25389 0.596718 4.17352 0.61269 4.09864 0.643368C2.89199 1.14391 1.8973 2.03107 1.27951 3.15771C0.661722 4.28434 0.457958 5.58278 0.70201 6.83767C0.946063 8.09257 1.62327 9.22853 2.62132 10.0572C3.61937 10.8858 4.8783 11.3573 6.18934 11.3936C6.24339 11.3936 6.29745 11.3936 6.3515 11.3936C7.35729 11.3941 8.3456 11.1375 9.21761 10.6494C10.0896 10.1613 10.8148 9.45885 11.3205 8.61225C11.3718 8.52532 11.3987 8.42675 11.3983 8.32648C11.398 8.22622 11.3705 8.12782 11.3186 8.04122C11.2667 7.95463 11.1922 7.88291 11.1027 7.83332C11.0132 7.78373 10.9119 7.75801 10.8089 7.75877C10.7721 7.75872 10.7352 7.76187 10.6989 7.76818C10.4 7.81997 10.0971 7.84608 9.79352 7.84619C9.67769 7.84619 9.56186 7.84619 9.4441 7.83491C8.66809 7.78322 7.91428 7.56058 7.23954 7.18377C6.56479 6.80696 5.98675 6.28583 5.54902 5.6597C5.1113 5.03358 4.82534 4.31882 4.7127 3.56936C4.60007 2.81989 4.6637 2.05531 4.89882 1.33329C4.92597 1.24764 4.93201 1.15696 4.91645 1.06861C4.90089 0.980252 4.86417 0.89671 4.80927 0.824754C4.75437 0.752799 4.68284 0.694452 4.60046 0.654446C4.51808 0.614441 4.42718 0.593904 4.33513 0.594495V0.596371Z"
@@ -315,14 +303,13 @@
                                 </defs>
                             </svg>
                             <svg
-                                class="theme-light"
+                                class="theme-switcher__light-theme-icon"
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="18"
                                 height="18"
                                 viewBox="0 0 18 18"
                                 fill="none"
                             >
-                                <!--theme-switcher__light-theme-icon-->
                                 <g clip-path="url(#clip0_41_883)">
                                     <path
                                         d="M9.00048 3.7967C10.037 3.7965 11.0504 4.1037 11.9123 4.67944C12.7742 5.25518 13.4461 6.07361 13.8428 7.03121C14.2396 7.98881 14.3435 9.04257 14.1413 10.0592C13.9391 11.0758 13.44 12.0097 12.7071 12.7426C11.9741 13.4756 11.0403 13.9747 10.0236 14.1769C9.007 14.379 7.95324 14.2752 6.99564 13.8784C6.03804 13.4816 5.21961 12.8098 4.64387 11.9479C4.06813 11.0859 3.76094 10.0726 3.76115 9.03605C3.76283 7.64701 4.31536 6.31533 5.29757 5.33313C6.27977 4.35092 7.61144 3.79838 9.00048 3.7967ZM9.00048 2.73975C7.75494 2.73975 6.53738 3.10911 5.50176 3.80112C4.46614 4.49313 3.65899 5.47671 3.18239 6.62746C2.70579 7.77821 2.58114 9.04446 2.82421 10.2661C3.06728 11.4877 3.66715 12.6097 4.54796 13.4904C5.42876 14.371 6.55095 14.9707 7.77258 15.2136C8.99422 15.4565 10.2604 15.3316 11.4111 14.8548C12.5618 14.378 13.5452 13.5707 14.2371 12.535C14.9289 11.4992 15.2981 10.2816 15.2978 9.03605C15.2978 8.20912 15.1349 7.39028 14.8185 6.62631C14.502 5.86234 14.0381 5.16821 13.4533 4.58353C12.8686 3.99885 12.1743 3.53509 11.4103 3.21873C10.6463 2.90238 9.82741 2.73961 9.00048 2.73975Z"
@@ -374,12 +361,13 @@
                         </div>
                     </label>
                 </div>
-                <div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div class="decor">
+                    <div class="decor__left-green"></div>
+                    <div class="decor__left-red"></div>
+                    <div class="decor__right-green"></div>
+                    <div class="decor__bottom-red"></div>
+                    <div class="decor__bottom-green"></div>
+                    <div class="decor__bottom"></div>
                 </div>
             </div>
         </div>
