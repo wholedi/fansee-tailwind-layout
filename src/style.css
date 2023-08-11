@@ -35,37 +35,37 @@
     --accent: 16, 234, 181;
   }
   html[data-theme='default'] {
-    --background-primary: 13, 26, 37;
-    --background-secondary: 82, 100, 118;
-    --background-button: 37,49,59;
+    --background-primary: rgb(13, 26, 37);
+    --background-secondary: rgb(82, 100, 118);
+    --background-button: rgb(37,49,59);
 
-    --text-primary: 255, 255, 255;
-    --text-secondary: 188, 204, 223;
-    --text-highlighted: 16, 234, 181;
+    --text-primary: rgb(255, 255, 255);
+    --text-secondary: rgb(188, 204, 223);
+    --text-highlighted: rgb(16, 234, 181);
 
-    --input-icon-active: 82, 100, 118;
-    --input-icon-disabled: 37, 49, 59;
-    --input-border-active: 245, 245, 245;
-    --input-border-disabled: 82, 100, 118;
+    --input-icon-active: rgb(82, 100, 118);
+    --input-icon-disabled: rgb(37, 49, 59);
+    --input-border-active: rgb(245, 245, 245);
+    --input-border-disabled: rgb(82, 100, 118);
 
-    --input-text-form: 178, 220, 200;
-    --input-text-error: 194, 78, 78;
+    --input-text-form: rgb(178, 220, 200);
+    --input-text-error: rgb(194, 78, 78);
 
   }
 
   html[data-theme='light'] {
-    --background-primary: 248, 250, 253 ;
-    --background-secondary: 232, 238, 243;
-    --background-button: 232, 238, 243;
+    --background-primary: rgb(248, 250, 253);
+    --background-secondary: rgb(232, 238, 243);
+    --background-button: rgb(232, 238, 243);
 
-    --text-primary: 37, 49, 59;
-    --text-secondary: 102, 106, 121;
-    --text-highlighted: 44, 219, 176;
+    --text-primary: rgb(37, 49, 59);
+    --text-secondary: rgb(102, 106, 121);
+    --text-highlighted: rgb(44, 219, 176);
 
-    --input-icon-active: 37, 49, 59;
-    --input-icon-disabled: 148, 160, 172;
-    --input-border-active: 199, 205, 213;
-    --input-border-disabled: 232, 238, 243;
-    --input-text-form: 178, 220, 200;
+    --input-icon-active: rgb(37, 49, 59);
+    --input-icon-disabled: rgb(148, 160, 172);
+    --input-border-active: rgb(199, 205, 213);
+    --input-border-disabled: rgb(232, 238, 243);
+    --input-text-form: rgb(178, 220, 200);
   }
 }
