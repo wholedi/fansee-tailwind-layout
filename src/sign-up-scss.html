@@ -28,15 +28,54 @@
                     <form class="content__form form" action="" method="post">
                         <div class="form__item input">
                             <input
-                                class="input__field"
+                                class="input__field input__field--incorrect"
                                 id="Email"
                                 type="text"
                                 name="name"
                                 placeholder=" "
                             />
-                            <label class="input__label" for="Email">
+                            <label
+                                class="input__label input__label--placeholder"
+                                for="Email"
+                            >
                                 Email
                             </label>
+
+                            <label class="input__label input__label--incorrect">
+                                <svg
+                                    width="14"
+                                    height="14"
+                                    viewBox="0 0 14 14"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <g id="Danger Circle">
+                                        <path
+                                            id="Fill 1"
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M7.00016 1.33333C3.8755 1.33333 1.3335 3.87533 1.3335 6.99999C1.3335 10.1247 3.8755 12.6667 7.00016 12.6667C10.1248 12.6667 12.6668 10.1247 12.6668 6.99999C12.6668 3.87533 10.1248 1.33333 7.00016 1.33333ZM7.00016 13.6667C3.32416 13.6667 0.333496 10.676 0.333496 7C0.333496 3.324 3.32416 0.333328 7.00016 0.333328C10.6762 0.333328 13.6668 3.324 13.6668 7C13.6668 10.676 10.6762 13.6667 7.00016 13.6667Z"
+                                            fill="currentColor"
+                                        />
+                                        <path
+                                            id="Fill 3"
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M6.99609 7.91533C6.72009 7.91533 6.49609 7.69133 6.49609 7.41533V4.46933C6.49609 4.19333 6.72009 3.96933 6.99609 3.96933C7.27209 3.96933 7.49609 4.19333 7.49609 4.46933V7.41533C7.49609 7.69133 7.27209 7.91533 6.99609 7.91533Z"
+                                            fill="currentColor"
+                                        />
+                                        <path
+                                            id="Fill 5"
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M7.00252 10.1973C6.63385 10.1973 6.33252 9.89926 6.33252 9.53059C6.33252 9.16192 6.62785 8.86392 6.99585 8.86392H7.00252C7.37119 8.86392 7.66919 9.16192 7.66919 9.53059C7.66919 9.89926 7.37119 10.1973 7.00252 10.1973Z"
+                                            fill="currentColor"
+                                        />
+                                    </g>
+                                </svg>
+                                Email incorrect
+                            </label>
+
                             <div class="input__icon">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +100,9 @@
                                 name="name"
                                 placeholder=" "
                             />
-                            <label class="input__label" for="Password"
+                            <label
+                                class="input__label input__label--placeholder"
+                                for="Password"
                                 >Password</label
                             >
                             <div class="input__icon">
@@ -98,6 +139,49 @@
                             </button>
                         </div>
 
+                        <div class="prompt">
+                            <p class="prompt__characters">
+                                8 - 16 characters
+                                <svg
+                                    width="12"
+                                    height="12"
+                                    viewBox="0 0 12 12"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <g id="IoCheckmarkSharp">
+                                        <path
+                                            id="Vector"
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M10.4778 2.9511L4.52532 9.75393L1.521 6.74961L2.2502 6.0204L4.47508 8.24529L9.70169 2.27202L10.4778 2.9511Z"
+                                            fill="#10EAB5"
+                                        />
+                                    </g>
+                                </svg>
+                            </p>
+                            <p class="prompt__numbers">
+                                Numbers
+                                <svg
+                                    width="12"
+                                    height="12"
+                                    viewBox="0 0 12 12"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <g id="IoCheckmarkSharp">
+                                        <path
+                                            id="Vector"
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M10.4778 2.9511L4.52532 9.75393L1.521 6.74961L2.2502 6.0204L4.47508 8.24529L9.70169 2.27202L10.4778 2.9511Z"
+                                            fill="#10EAB5"
+                                        />
+                                    </g>
+                                </svg>
+                            </p>
+                        </div>
+
                         <div class="form__item input">
                             <input
                                 class="input__field"
@@ -106,7 +190,9 @@
                                 name="name"
                                 placeholder=" "
                             />
-                            <label class="input__label" for="Confirm password"
+                            <label
+                                class="input__label input__label--placeholder"
+                                for="Confirm password"
                                 >Confirm password</label
                             >
                             <div class="input__icon">
@@ -142,6 +228,25 @@
                                 </svg>
                             </button>
                         </div>
+
+                        <label class="terms-conditions" for="info">
+                            <input
+                                class="terms-conditions__input"
+                                type="checkbox"
+                                id="info"
+                                name="info"
+                            />
+                            <img
+                                class="terms-conditions__mark"
+                                src="images/icons/check-mark.svg"
+                                alt="icon"
+                            />
+                            I agree of the
+                            <a class="terms-conditions__link">
+                                Terms & conditions</a
+                            >
+                        </label>
+
                         <button
                             class="form__item button button--outlined"
                             type="submit"
