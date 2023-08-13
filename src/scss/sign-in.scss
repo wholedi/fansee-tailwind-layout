@@ -257,6 +257,7 @@
     font-weight: 700;
     color: var(--text-primary);
     border-bottom: solid 2px  var(--text-highlighted);
+    cursor: pointer;
   }
 }
 
@@ -293,6 +294,7 @@
 
   .footer {
     &__page-switcher-link {
+      margin-left: 1px;
       color: var(--text-primary);
       border-bottom: solid 2px var(--text-highlighted);
     }
@@ -326,7 +328,7 @@
         opacity: 0.4;
       }
 
-      &__light-theme-icon {
+      .theme-switcher__light-theme-icon{
         opacity: 1;
       }
 
@@ -589,6 +591,48 @@
 
     .account__message {
       font-size: 13px;
+    }
+
+    .decor {
+      &__left-green {
+        width: 266px;
+        height: 266px;
+        border-radius: 266px;
+        left: -128px;
+        top: -64px;
+      }
+
+      &__left-red {
+        width: 290px;
+        height: 290px;
+        border-radius: 290px;
+        left: -6px;
+        top: -84px;
+      }
+
+      &__right-green {
+        width: 208px;
+        height: 208px;
+        border-radius: 208px;
+        right: -94px;
+        top: -61px;
+      }
+
+      &__bottom-red {
+        width: 266px;
+        height: 266px;
+        border-radius: 266px;
+        right: -115px;
+        bottom: -60px;
+      }
+
+      &__bottom-green {
+        width: 243px;
+        height: 234px;
+        border-radius: 234px;
+        left: 250px;
+        bottom: -105px;
+      }
     }
   }
 
